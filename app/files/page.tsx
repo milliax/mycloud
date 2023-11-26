@@ -1,7 +1,6 @@
+import { redirect, permanentRedirect } from "next/navigation"
+
 export default function Files() {
-    return (
-        <main>
-            Files
-        </main>
-    )
+    // permanentRedirect("/files/drive")
+    redirect('/files/drive')
 }

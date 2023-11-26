@@ -15,8 +15,8 @@ import {
 
 export default function Header() {
     return (
-        <nav className="flex flex-row h-12 bg-red-100 justify-between px-3">
-            <div className="group flex flex-row space-x-3 text-slate-600 hover:text-black">
+        <nav className="flex flex-row h-12 bg-slate-200 justify-between px-3">
+            <div className="group flex flex-row space-x-3 text-slate-600 ">
                 <div className="flex flex-row items-center cursor-default text-black">
                     My Cloud
                 </div>
@@ -45,7 +45,7 @@ const LinkWithIcon = ({
 }) => {
     return (
         <Link href={url} passHref>
-            <div className="text-sm w-12 h-full flex flex-col items-center justify-center">
+            <div className="text-sm w-12 h-full flex flex-col items-center justify-center hover:text-black">
                 <Icon />
                 <div className="group-hover:block hidden">
                     {text}

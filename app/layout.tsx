@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import Header from 'components/components/Header'
+import Header from '@components/Header'
+import clsx from 'clsx'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,7 +18,10 @@ export default function RootLayout({
 }) {
     return (
         <html lang="zh-tw">
-            <body className={inter.className}>
+            <body className={clsx(
+                inter.className,
+                'h-[calc(100vh-3rem)]'
+            )}>
                 <Header />
                 {children}
             </body>
