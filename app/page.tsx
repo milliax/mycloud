@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import clsx from 'clsx'
 import React from 'react'
+import AnimatedButton from '@components/AnimatedButton'
+import AnimateScale from '@components/animate/HoverScale'
 
 export default function Home() {
     const username = 'user'
@@ -28,9 +30,7 @@ export default function Home() {
                         訊息
                     </Card>
                 </div>
-                <div className='w-32 h-12 bg-sky-300 hover:bg-sky-500 flex justify-center items-center cursor-pointer text-black hover:text-white font-semibold rounded-lg'>
-                    自定
-                </div>
+                <AnimatedButton text={'自定'} />
             </main>
             <div className='w-full h-20 bg-gray-200 flex flex-row justify-center items-center'>
                 Milliax Mycloud
@@ -52,14 +52,14 @@ const Card = ({
     className?: string,
 }) => {
     return (
-        <div className={clsx(
+        <AnimateScale className={clsx(
             'bg-white rounded-lg hover:bg-neutral-50 hover:shadow-lg px-3 py-5',
             width === 'sm' ? 'col-span-1' : (width === 'md' ? 'col-span-2' : 'col-span-3'),
             className
         )} style={{
             height: `${height}rem`,
-        }}>
+        }} multiplier={1.05}>
             {children}
-        </div>
+        </AnimateScale>
     )
 }

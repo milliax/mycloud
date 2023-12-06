@@ -12,8 +12,10 @@ import {
 import {
     FaMessage
 } from 'react-icons/fa6'
+import HeaderClient from "./HeaderClient"
 
 export default function Header() {
+
     return (
         <nav className="flex flex-row h-12 bg-slate-200 justify-between px-3">
             <div className="group flex flex-row space-x-3 text-slate-600 ">
@@ -27,9 +29,7 @@ export default function Header() {
                 <LinkWithIcon text="Messages" url="/messages" Icon={FaMessage} />
                 <LinkWithIcon text="Tasks" url="/tasks" Icon={FaTasks} />
             </div>
-            <div className="flex flex-row items-center cursor-pointer">
-                User Settings
-            </div>
+            <HeaderClient />
         </nav>
     )
 }
