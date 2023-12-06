@@ -2,7 +2,7 @@ module.exports = {
     apps: [{
         name: "milliax cloud",
         script: "pnpm",
-        args: "serve",
+        args: "start",
         instances: 'max',
         exec_mode: 'cluster',
         autorestart: true,
