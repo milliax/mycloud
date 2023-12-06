@@ -1,6 +1,6 @@
 module.exports = {
     apps: [{
-        name: "milliax blog",
+        name: "milliax cloud",
         script: "pnpm",
         args: "serve",
         instances: 'max',
