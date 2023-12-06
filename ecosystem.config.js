@@ -1,13 +1,13 @@
 module.exports = {
     apps: [{
         name: "milliax cloud",
-        script: "pnpm",
+        script: "yarn",
         args: "start",
         instances: 'max',
         exec_mode: 'cluster',
         autorestart: true,
         max_memory_restart: '1G',
-        watch: false,
+        watch: true,
         out_file: '../logs/out.log',
         error_file: '../logs/error.log',
         // env_production: {
