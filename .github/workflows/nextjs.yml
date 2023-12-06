@@ -75,7 +75,7 @@ jobs:
     environment:
       name: deploy on self-hosted pm2
       # url: ${{ steps.deployment.outputs.page_url }}
-      url: https://blog.milliax.me
+      url: https://mycloud.milliax.me
     runs-on: self-hosted
     # needs: build
     steps:

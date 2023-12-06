@@ -1,11 +1,10 @@
 import clsx from "clsx"
 
-export default function ({
+export default function ProgressBar ({
     progress
 }: {
     progress: number
 }) {
-    console.log()
     
     return (
         <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
