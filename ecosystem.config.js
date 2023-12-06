@@ -1,7 +1,7 @@
 module.exports = {
     apps: [{
         name: "milliax cloud",
-        script: "pnpm",
+        script: "yarn",
         args: "start",
         instances: 1,
         exec_mode: 'cluster',
@@ -14,9 +14,9 @@ module.exports = {
             NODE_ENV: "production",
             PORT: 5002
         },
-        env_preview: {
-            NODE_ENV: "production",
-            PORT: 5003,
-        }
+        // env: {
+        //     NODE_ENV: "production",
+        //     PORT: 5003,
+        // }
     }]
 }
