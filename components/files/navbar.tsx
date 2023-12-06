@@ -13,7 +13,7 @@ import ProgressBar from '@components/ProgressBar'
 export default function Navbar() {
     const [usage, setUsage] = useState<number>(0)
     const [usageLimit, setUsageLimit] = useState<number>(15)
-
+                        
     const init = () => {
         // TODO: fetch usage and usageLimit
     }
