@@ -26,7 +26,8 @@ const Button = ({
     text,
     ...props
 }: {
-    text: string
+    text: string,
+    onClick?: () => void,
 }) => {
     return (
         <AnimateScale className="w-32 h-12 bg-sky-300 hover:bg-sky-500 flex justify-center items-center cursor-pointer text-black hover:text-white font-semibold rounded-lg"
@@ -34,12 +35,5 @@ const Button = ({
         >
             {text}
         </AnimateScale>
-        // <motion.div className=''
-        //     {...props}
-        //     initial={{ scale: 1 }}
-        //     whileHover={{ scale: 1.1 }}
-        // >
-        //     {text}
-        // </motion.div>
     )
 }   
