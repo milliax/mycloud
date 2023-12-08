@@ -7,8 +7,6 @@ import AnimatedButton from '@components/AnimatedButton'
 import AnimateScale from '@components/animate/HoverScale'
 import toaster from '../libs/toast'
 
-
-
 export default function Home() {
     const username = 'user'
     const weather = '晴'

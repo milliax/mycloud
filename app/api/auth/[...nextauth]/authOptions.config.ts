@@ -1,7 +1,7 @@
 import { AuthOptions } from "next-auth"
 import EmailProvider from "next-auth/providers/email"
 
-export const nextAuthConfig: AuthOptions = {
+export const authOptions: AuthOptions = {
     providers: [
         EmailProvider({
             server: process.env.EMAIL_SERVER,
